@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="baselibs">
+      <UniqueIdentifier>{b66de0db-84e9-4a3f-8c7e-e61fb69da6c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="baselibs\zip">
+      <UniqueIdentifier>{11040309-e02c-4e9d-ad84-ddab71746ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="baselibs\md5">
+      <UniqueIdentifier>{bc003062-fee3-43d2-842d-bb1ee0c057a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppInst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CBaseLib.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CBaseLibInc.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CEncrypt.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CFileUtil.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CIniHelper.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CJsonLib.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CLog.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CMd5Encode.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CMinizipFile.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CBase64.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CProcessUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CServiceControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\crc32.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\deflate.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\gzguts.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\inffast.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\inffixed.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\inflate.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\inftrees.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\trees.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\zconf.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\zlib.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\zlib\zutil.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\crypt.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\ioapi.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\iowin32.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\mztools.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\unzip.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\src\unzip11\zip.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\ioapi.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\iowin32.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\miniunz.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\unzip.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\zconf.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\zip.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\zlib.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\minizip\include\zutil.h">
+      <Filter>baselibs\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\md5\md5.h">
+      <Filter>baselibs\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\AppPublic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\AppVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CReadWriteLock.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CHttpClient.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CStringUtil.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\baselibs\CSysInfo.h">
+      <Filter>baselibs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Inst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppInst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CBaseLib.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CEncrypt.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CFileUtil.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CIniHelper.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CJsonLib.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CMd5Encode.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CMinizipFile.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CBase64.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\adler32.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\compress.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\crc32.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\deflate.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\gzclose.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\gzlib.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\gzread.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\gzwrite.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\infback.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\inffast.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\inflate.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\inftrees.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\trees.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\uncompr.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\zlib\zutil.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\ioapi.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\iowin32.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\miniunz.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\minizip.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\mztools.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\unzip.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\minizip\src\unzip11\zip.c">
+      <Filter>baselibs\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\md5\md5.c">
+      <Filter>baselibs\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CSysInfo.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CProcessUtil.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CServiceControl.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\baselibs\CHttpClient.cpp">
+      <Filter>baselibs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Inst.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="main.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="close_active.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="code_wrong.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="right.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="user_wrong.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="code.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="name.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="name_wrong.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="install.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="install_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="install_active.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\public\Inst.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\public\small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="error_left.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="error_right.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="progress_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="progress.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dep\minizip\src\zlib\zlib.3">
+      <Filter>baselibs\zip</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="安装流程说明.txt" />
+  </ItemGroup>
+</Project>

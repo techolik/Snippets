@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{049C895E-62E1-4824-87B9-6CF47A6326B6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Inst</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)output\deploy\</OutDir>
+    <TargetName>inst</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)output\deploy\</OutDir>
+    <TargetName>inst</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BUILDING_LIBCURL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep;$(SolutionDir)dep\minizip\include;$(SolutionDir)dep\jsoncpp-master\include;$(SolutionDir)dep\openssl-1.0.1e\include;$(SolutionDir)dep\curl-7.25.0\include;$(SolutionDir)baselibs;$(SolutionDir)sancaster\wrapper;$(SolutionDir)sancaster;$(SolutionDir)tuner;$(SolutionDir)coachman;$(SolutionDir)crank;$(SolutionDir)sansvc;$(SolutionDir)packager;$(SolutionDir)piledriver;$(SolutionDir)public;$(SolutionDir)bugreport;$(SolutionDir)setup;$(WDKROOT)\inc\ddk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;Msimg32.lib;json_vc120_libmtd.lib;libcurld.lib;imagehlp.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\openssl-1.0.1e\lib;$(SolutionDir)dep\curl-7.25.0\libs;$(SolutionDir)output\lib;$(SolutionDir)dep\flt;$(SolutionDir)output\SanFranciscoDSS;$(SolutionDir)dep\jsoncpp-master\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BUILDING_LIBCURL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep;$(SolutionDir)dep\minizip\include;$(SolutionDir)dep\jsoncpp-master\include;$(SolutionDir)dep\openssl-1.0.1e\include;$(SolutionDir)dep\curl-7.25.0\include;$(SolutionDir)baselibs;$(SolutionDir)sancaster\wrapper;$(SolutionDir)sancaster;$(SolutionDir)tuner;$(SolutionDir)coachman;$(SolutionDir)crank;$(SolutionDir)sansvc;$(SolutionDir)packager;$(SolutionDir)piledriver;$(SolutionDir)public;$(SolutionDir)bugreport;$(SolutionDir)setup;$(WDKROOT)\inc\ddk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Gdiplus.lib;Msimg32.lib;json_vc120_libmt.lib;libcurl.lib;imagehlp.lib;Version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dep\openssl-1.0.1e\lib;$(SolutionDir)dep\curl-7.25.0\libs;$(SolutionDir)output\lib;$(SolutionDir)dep\flt;$(SolutionDir)output\SanFranciscoDSS;$(SolutionDir)dep\jsoncpp-master\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalOptions>/IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\baselibs\CBase64.h" />
+    <ClInclude Include="..\baselibs\CBaseLib.h" />
+    <ClInclude Include="..\baselibs\CBaseLibInc.h" />
+    <ClInclude Include="..\baselibs\CEncrypt.h" />
+    <ClInclude Include="..\baselibs\CFileUtil.h" />
+    <ClInclude Include="..\baselibs\CHttpClient.h" />
+    <ClInclude Include="..\baselibs\CIniHelper.h" />
+    <ClInclude Include="..\baselibs\CJsonLib.h" />
+    <ClInclude Include="..\baselibs\CLog.h" />
+    <ClInclude Include="..\baselibs\CMd5Encode.h" />
+    <ClInclude Include="..\baselibs\CMinizipFile.h" />
+    <ClInclude Include="..\baselibs\CProcessUtil.h" />
+    <ClInclude Include="..\baselibs\CReadWriteLock.h" />
+    <ClInclude Include="..\baselibs\CServiceControl.h" />
+    <ClInclude Include="..\baselibs\CStringUtil.h" />
+    <ClInclude Include="..\baselibs\CSysInfo.h" />
+    <ClInclude Include="..\dep\md5\md5.h" />
+    <ClInclude Include="..\dep\minizip\include\ioapi.h" />
+    <ClInclude Include="..\dep\minizip\include\iowin32.h" />
+    <ClInclude Include="..\dep\minizip\include\miniunz.h" />
+    <ClInclude Include="..\dep\minizip\include\unzip.h" />
+    <ClInclude Include="..\dep\minizip\include\zconf.h" />
+    <ClInclude Include="..\dep\minizip\include\zip.h" />
+    <ClInclude Include="..\dep\minizip\include\zlib.h" />
+    <ClInclude Include="..\dep\minizip\include\zutil.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\crypt.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\ioapi.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\iowin32.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\mztools.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\unzip.h" />
+    <ClInclude Include="..\dep\minizip\src\unzip11\zip.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\crc32.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\deflate.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\gzguts.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\inffast.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\inffixed.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\inflate.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\inftrees.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\trees.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\zconf.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\zlib.h" />
+    <ClInclude Include="..\dep\minizip\src\zlib\zutil.h" />
+    <ClInclude Include="..\public\AppPublic.h" />
+    <ClInclude Include="..\public\AppVersion.h" />
+    <ClInclude Include="AppInst.h" />
+    <ClInclude Include="Inst.h" />
+    <ClInclude Include="InstWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\baselibs\CBase64.cpp" />
+    <ClCompile Include="..\baselibs\CBaseLib.cpp" />
+    <ClCompile Include="..\baselibs\CEncrypt.cpp" />
+    <ClCompile Include="..\baselibs\CFileUtil.cpp" />
+    <ClCompile Include="..\baselibs\CHttpClient.cpp" />
+    <ClCompile Include="..\baselibs\CIniHelper.cpp" />
+    <ClCompile Include="..\baselibs\CJsonLib.cpp" />
+    <ClCompile Include="..\baselibs\CMd5Encode.cpp" />
+    <ClCompile Include="..\baselibs\CMinizipFile.cpp" />
+    <ClCompile Include="..\baselibs\CProcessUtil.cpp" />
+    <ClCompile Include="..\baselibs\CServiceControl.cpp" />
+    <ClCompile Include="..\baselibs\CSysInfo.cpp" />
+    <ClCompile Include="..\dep\md5\md5.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\ioapi.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\iowin32.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\miniunz.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\minizip.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\mztools.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\unzip.c" />
+    <ClCompile Include="..\dep\minizip\src\unzip11\zip.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\adler32.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\compress.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\crc32.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\deflate.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\gzclose.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\gzlib.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\gzread.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\gzwrite.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\infback.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\inffast.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\inflate.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\inftrees.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\trees.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\uncompr.c" />
+    <ClCompile Include="..\dep\minizip\src\zlib\zutil.c" />
+    <ClCompile Include="AppInst.cpp" />
+    <ClCompile Include="Inst.cpp" />
+    <ClCompile Include="InstWnd.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Inst.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\public\Inst.ico" />
+    <Image Include="..\public\small.ico" />
+    <Image Include="close.png" />
+    <Image Include="close_active.png" />
+    <Image Include="close_hover.png" />
+    <Image Include="code.bmp" />
+    <Image Include="code_wrong.bmp" />
+    <Image Include="error_left.png" />
+    <Image Include="error_right.png" />
+    <Image Include="install.png" />
+    <Image Include="install_active.png" />
+    <Image Include="install_hover.png" />
+    <Image Include="main.png" />
+    <Image Include="name.bmp" />
+    <Image Include="name_wrong.bmp" />
+    <Image Include="progress.png" />
+    <Image Include="progress_background.png" />
+    <Image Include="right.bmp" />
+    <Image Include="small.ico" />
+    <Image Include="user_wrong.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\dep\minizip\src\zlib\zlib.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="安装流程说明.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

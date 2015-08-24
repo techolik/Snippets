@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#pragma code_page(65001)
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Simplified, PRC) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CODE_WRONG          BITMAP                  "code_wrong.bmp"
+IDB_RIGHT               BITMAP                  "right.bmp"
+IDB_NAME_WRONG          BITMAP                  "name_wrong.bmp"
+IDB_CODE                BITMAP                  "code.bmp"
+IDB_NAME                BITMAP                  "name.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+ID_PNG_MAIN             RCDATA                  "main.png"
+ID_PNG_CLOSE            RCDATA                  "close.png"
+ID_PNG_CLOSE_HOVER      RCDATA                  "close_hover.png"
+ID_PNG_CLOSE_ACTIVE     RCDATA                  "close_active.png"
+ID_PNG_INSTALL          RCDATA                  "install.png"
+ID_PNG_INSTALL_HOVER    RCDATA                  "install_hover.png"
+ID_PNG_INSTALL_ACTIVE   RCDATA                  "install_active.png"
+ID_PNG_ERROR_BALLOON_LEFT	RCDATA				"error_left.png"
+ID_PNG_ERROR_BALLOON_RIGHT	RCDATA				"error_right.png"
+ID_PNG_PROGRESS_BACKGROUND	RCDATA				"progress_background.png"
+ID_PNG_PROGRESS				RCDATA				"progress.png"
+ID_ZIP_SANCASTER        RCDATA                  "sancaster.zip"
+
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_INST                ICON                    "..\\public\\Inst.ico"
+IDI_SMALL               ICON                    "..\\public\\small.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "安装"
+    IDC_INST                "INST"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NAME                "真实姓名"
+    IDS_PHONE               "手机号码"
+    IDS_CODE                "安装确认码"
+    IDS_INSTALL             "确定安装"
+	IDS_NAME_ERROR			"用户名重复啦"
+	IDS_CODE_ERROR			"确认码错误"
+	IDS_CONNECTION_ERROR	"好像连不上网哦"
+	IDS_INSTALL_FINISH		"安装完成\r\n开始分析数据"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
